@@ -1,0 +1,184 @@
+/*
+* @Author: Administrator
+* @Date:   2016-03-14 16:36:45
+* @Last Modified by:   'GangsterHyj'
+* @Last Modified time: 2016-03-14 19:12:28
+*/
+body {
+	background-color: #DEDEDE;
+	font-family: "微软雅黑";
+}
+
+.startBar {
+	height: 60px;
+	background-color: #333333;
+	margin-bottom: 20px;
+}
+
+.startLeft {
+	float: left;
+}
+
+.startLeft img{
+	padding-left: 30px;
+	padding-top: 10px;
+}
+
+.startRight {
+	height: 60px;
+	float: right;
+}
+
+.startRight li {
+	font-size: 15px;
+	font-family: "微软雅黑";
+	padding-right: 20px;
+	width: 80px;
+	text-align: center;
+	list-style-type: disc;
+	float: left;
+	margin: 0 5px;
+	line-height: 50px;
+}
+
+.startRight a:link, .startRight a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.startRight a:hover, .startRight a:active {
+	text-decoration: none;
+	color: #AFAFAF;
+}
+
+.mainBody {
+
+}
+
+.firstPart, .secondPart, .pic, .lastPart, .sidebar {
+	width: 1200px;
+	background-color: #FFF;
+	margin: 20px auto;
+	padding: 20px 15px;
+	border-bottom: 4px solid #AFAFAF;
+	border-right: 4px solid #AFAFAF;
+}
+
+.firstPart h5, .secondPart h5, .lastPart h5{
+	color: #AFAFAF;
+}
+
+.firstPart h3, .secondPart h3, .lastPart h3{
+	color: #57654E;
+}
+
+
+.firstPart p, .secondPart p {
+	text-indent: 2em;
+}
+
+.secondPart li {
+	list-style-type: none;
+}
+
+.unitPic {
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	border: 1px solid #AFAFAF;
+	font-size: 12px;
+	margin-bottom: 15px;
+	margin-left: 100px;
+}
+
+
+
+.unitPic p {
+	margin-bottom: 10px;
+}
+
+.unitPic img {
+	width: 100px;
+	height: 80px;
+}
+
+.lastPart li {
+	font-weight: bold;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: white;
+}
+
+thead td {
+	margin-right: 1px;
+}
+tbody td {
+	border:solid #AFAFAF;
+	border-width:0px 1px 1px 1px;
+	padding: 0px 5px;
+}
+
+th {
+	background-color: #343434;
+	color: #FFF;
+	padding: 0px 5px;
+}
+
+
+
+.total td {
+	background-color: #CCCCCC;
+}
+
+.sidebar input, .sidebar select {
+	margin-left: 15px;
+}
+
+
+.footer {
+	height: 70px;
+	line-height: 70px;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+.sidebar {
+
+}
+
+
+.inputBox {
+
+	text-align: left;
+	padding-left: 290px;
+}
+
+textarea {
+	width: 760px;
+	height: 100px;
+	float: right;
+	padding-right: 70px;
+}
+
+.btn {
+	padding-right: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	clear: left;
+	width: 100%;
+	color: white;
+	background-color: #3355D0;
+	height: 40px;
+	line-height: 40px;
+	margin: 10px;
+	border-radius: 15px;
+	border: 0px;
+}
