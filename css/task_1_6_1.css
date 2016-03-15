@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*主体*/
+.mainBody {
+	width: 980px;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 60px;
+
+}
+
+/*头部*/
+.header {
+	height: 60px;
+	border-bottom: 3px solid #938e8c;
+	font-family: "黑体";
+}
+
+/*头部左侧*/
+.header_left {
+	float: left;
+	padding-left: 10px;
+	width: 100px;
+	height: 60px;
+	background-color: #d45d5c;
+}
+
+/*头部左侧链接*/
+.header_left a {
+	position: relative;
+	bottom: -35px;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+}
+
+/*头部右侧时间*/
+.header_right {
+	color: #d45d5c;
+	float: right;
+	padding-top: 40px;
+}
+
+/*第一部分*/
+.firstPart {
+	width: 100%;
+	margin-top: 35px;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+
+.firstLeft {
+	float: left;
+	width: 640px;
+	overflow: hidden;
+}
+
+/*第一部分左侧的上半部分*/
+.up {
+	margin-bottom: 40px;
+}
+
+.down {
+	overflow: hidden;
+}
+
+.down p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+.what, .when {
+	float: left;
+}
+
+.how {
+	float: right;
+}
+
+.what {
+	width: 230px;
+	margin-right: 15px;
+}
+
+.what h3 {
+	color: #428c59;
+	text-decoration: underline;
+}
+
+
+.when {
+	width: 200px;
+	margin-right: 15px;
+}
+
+.when h3 {
+	color: #d8a565;
+	text-decoration: underline;	
+}
+
+.how {
+	width: 180px;
+}
+.how h3 {
+	color: #cc7680;
+	text-decoration: underline;		
+}
+
+
+.details {
+	margin-left: 20px;
+	margin-top: 25px;
+	font-size: 12px;
+}
+
+.details span {
+	color: #cd4a48;
+	font-style: italic;
+}
+
+
+.firstRight {
+	overflow: hidden;
+	float: left;
+	border-top: 2px solid #cc8090;
+	margin-left: 40px;
+}
+
+.about {
+	text-decoration: underline;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.aboutDetails {
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 12px;
+	line-height: 10px;
+	color: #676767;
+	font-family: "楷体";
+}
+
+.big1 {
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.big2 {
+	padding-left: 20px;
+	color: #cc8091;
+	overflow: hidden;
+}
+.bleft {
+	font-size: 55px;
+	float: left;
+}
+.bright {
+	overflow: hidden;
+	position: relative;
+	bottom: -15px;
+	float: left;
+}
+.bru {
+	font-size: 21px;
+}
+.brd {
+	font-size: 12px;
+}
+
+/*第二部分*/
+
+.secondPartLeft h1 {
+	font-family: "黑体";
+	font-size: 42px;
+	font-weight: bold;
+	color: #11456b;
+}
+
+.secondPartLeft h1 span {
+	font-size: 72px;
+	color: #f5e327;
+	font-style: italic;;
+	
+}
+
+.secondPartLeft h2 {
+	font-family: "黑体";
+	font-size: 33px;
+	font-weight: bold;
+	color: #11456b;
+}
+
+.secondPartLeftBody {
+	margin-top: 30px;
+	width: 415px;
+	border-top: 2px solid #11456b;
+}

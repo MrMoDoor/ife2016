@@ -1,0 +1,119 @@
+/*The purpose of the container is to set the width
+of the entire grid. The width of the container is 
+generally 100%, but you might want to set a max-width 
+for larger displays*/
+/*设置容器的目的在于设置整个网格系统的宽度，容器宽度
+通常设为100%，但是可以设置最大宽度*/
+.grid-container {
+	width: 100%;
+	min-width: 1200px;
+}
+
+/*The purpose of the row element is to keep the columns inside it 
+from overflowing onto other rows.. To achieve this, we'll 
+use the clearfix hack to make sure everything inside
+the row stays inside the row*/
+/*设置行元素的目的是防止在行中的列元素覆盖了其他行的内容，
+可以使用clearfix来确保行元素里的一切都呆在行元素内*/
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Floats, inline-blocks, display-table, display-flex.
+These are all different ways of positioning columns 
+in CSS. From my personal experience, the least error
+prone and most widely used of these methods is the 
+'float' method. If our columns are empty however, 
+our floated columns will stack on top of each other.
+To prevent this, we'll give our columns a min-height
+of 1px as well as float them.
+To find the width of one column, all we have to do is divide 
+the total number of columns by the width of the container.
+In our case, the width of the container is 100%, 
+and we want 6 columns, so 100/6 = 16.66, so our base
+ column width is 16.66%.*/
+/*最广泛的应用CSS于列元素的样式是float，如果我们的列为空，
+可以给它一个最小高度来防止这样的现象发生
+为了找出每一列的宽度，将容器的宽度除以总的列数将可以得到
+每一列的宽度百分比*/
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	width: 16.66%;
+	/*our gutter*/
+	padding: 12px;
+	background-color: #FFDCDC;
+}
+
+[class*='col-']  > p {
+	background-color: #FFC2C2;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+.col-1{
+    width: 16.66%; 
+}
+.col-2{
+    width: 33.33%; 
+}
+.col-3{
+    width: 50%; 
+}
+.col-4{
+    width: 66.664%;
+}
+.col-5{
+    width: 83.33%;
+}
+.col-6{
+    width: 100%;
+}
+
+/*列元素之间的空隙columns gutters*/
+/*注意利用border-box来使得对于设置padding和边框属性都
+不会改变列元素的宽度或者高度，如下所示*/
+
+.grid-container *{
+	box-sizing: border-box;
+}
+
+.outline, .outline * {
+	outline: 1px solid #F6A1A1;
+}
+
+/*Adjusting our grid for mobile layouts is pretty easy. All we 
+have to do is adjust the widths of the columns*/
+
+
+/*响应式布局要考虑各种各样的情况*/
+
+@media all and (max-width: 800px) {
+	.col-1 {width: 33.33%;}
+	.col-2 {width: 50%;}
+	.col-3 {width: 83.33%;}
+	.col-4 {width: 100%;}
+	.col-5 {width: 100%;}	
+	.col-6 {width: 100%;}
+	.row .col-2:last-of-type {
+		width: 100%;
+	}
+	.row .col-5 ~ .col-1 {
+		width: 100%;
+	}
+}
+
+@media all and (max-width:650px){
+        .col-1{ width: 50%;        }
+        .col-2{ width: 100%;    }
+        .col-3{ width: 100%;    }
+        .col-4{ width: 100%;    }
+        .col-5{ width: 100%;    }
+        .col-6{ width: 100%;      }
+}
